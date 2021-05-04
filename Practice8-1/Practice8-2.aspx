@@ -10,6 +10,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:TextBox ID="tb_Msg" runat="server"></asp:TextBox>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tb_Msg" ErrorMessage="格式錯誤" ValidationExpression="(\d+|-)?\d+\.\d{0,6}|\.\d{0,6}"></asp:RegularExpressionValidator>
         </div>
     </form>
 </body>
